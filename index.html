@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kyleigh Green">
+	<title>Form Activity Solution File</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss
+				skip links for your website. Forms can be a source of frustration for users, whether they specifically
+				need help with accessing your website or if they just prefer that your forms be easy to use and submit.
+				Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+			<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+
+			<form>
+				<label for="full-name">Full Name<span class="required">*</span></label>
+				<input type="text">
+
+				<label for="email">Email<span class="required">*</span></label>
+				<input type="email">
+
+				<label for="phone">Phone<span class="required">*</span></label>
+				<input type="tel">
+
+				<fieldset>
+					<legend>Preferred Contact Method<span class="required">*</span></legend>
+
+					<input type="radio">
+					<label for="contact-phone">Phone</label>
+
+					<input type="radio">
+					<label for="email">Email</label>
+				</fieldset>
+
+				<fieldset>
+					<label for="homestate">What is your state of residence?</label>
+					<select id="homestate" name="select">
+						<option value="1">Arkansas</option>
+						<option value="2">Alabama</option>
+						<option value="3">California</option>
+						<option value="4">Colorado</option>
+						<option value="5">Delaware</option>
+						<option value="6">Florida</option>
+						<option value="7">Georgia</option>
+						<option value="8">Nevada</option>
+						<option value="9">Montana</option>
+						<option value="10">Oregon</option>
+						<option value="11">Rhode Island</option>
+						<option value="12">Washington</option>
+					</select>
+				</fieldset>
+
+				<label for="Comments">Comments<span class="required">*</span></label>
+				<textarea id="message"></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+
+</html>
